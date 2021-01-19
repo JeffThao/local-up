@@ -3,27 +3,15 @@ import NavBar from "../components/HomePortal/NavBar/NavBar";
 import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 import smallbusiness from "../images/localbusiness3.jpg";
 import developer from "../images/developers1.jpg";
+import Jumbo from "../components/client-portal/Jumbotron";
 
 function Home() {
   return (
     <div>
       <NavBar />
-      <Jumbotron>
-        <h1>LocalUP!</h1>
-        <div>
-        <p>
-          Our organization helps small and local businesses with marketing,
-          search engine optimization (SEO), and technical services such as
-          setting up a website. The goal of our organization is to give small
-          local businesses a cost-effective way to market their services. Our
-          overall mission is to give local businesses low-cost marketing
-          solutions. As well as establish them an e-commerce presence by
-          creating them a website where they can sell their goods online.
-        </p>
-        </div>
-      </Jumbotron>
-      <Container>
-        {/* <div className="middle-container-homepage mt-5">
+      <Jumbo />
+      {/* <Container>
+        <div className="middle-container-homepage mt-5">
           <Row className="justify-content-md-center">
             <Col xs={3}>
               <div className="img-card-homepage ">
@@ -70,8 +58,8 @@ function Home() {
               </div>
             </Col>
           </Row>
-        </div> */}
-      </Container>
+        </div>
+      </Container> */}
     </div>
   );
 }
