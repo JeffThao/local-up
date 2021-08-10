@@ -8,7 +8,7 @@ import Clients from "./pages/AdminClients";
 import Projects from "./pages/AdminProjects";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import Home from "./pages/Home";
+import Home from "./pages/Home2";
 import Services from "./pages/Services";
 import AuthService from "./services/auth-service";
 ////temporary////
