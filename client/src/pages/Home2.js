@@ -9,8 +9,9 @@ function Home() {
   return (
     <div>
       <NavBar />
+      <Jumbo />
       <Container fluid>
-        <Jumbo />
+        
       </Container>
     </div>
   );

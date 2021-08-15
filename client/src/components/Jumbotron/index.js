@@ -1,37 +1,39 @@
 import React from "react";
-import { Jumbotron, Button, Container } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
+import smallbusiness from "../../images/localbusiness3.jpg";
+import developer from "../../images/developers1.jpg";
 
 function Jumbo() {
   return (
       <>
-    <Jumbotron> 
+    <Jumbotron >
+      <div className='col-sm-3'>
+      <img
+                    src={smallbusiness}
+                    alt="Website Builder"
+                    className="homepage-image"
+                  />
+      </div>
+      <div className='col-sm-6'>
       <h1>Local UP!</h1>
-      <p>
+      <p >
         Our organization helps small and local businesses with marketing, search
         engine optimization (SEO), and technical services such as setting up a
         website. The goal of our organization is to give small local businesses
-        a ost-effective way to market their services. Our overall mission is to
-        give local businesses low-cost marketing olutions. As well as establish
-        them an e-commerce presence by creating them website where they can sell
+        a cost-effective way to market their services. Our overall mission is to
+        give local businesses low-cost marketing solutions. As well as establish
+        them an e-commerce presence by creating them a website where they can sell
         their goods online.
       </p>
+      </div>
+      <div className='col-sm-3'>
+      <img
+                    src={developer}
+                    alt="Website Builder"
+                    className="homepage-image"
+                  />
+      </div>
 
-      <p>
-        <Button variant="primary">Primary Button</Button>
-      </p>
-    </Jumbotron>
-    <br/>
-    <Jumbotron fluid>
-      <Container>
-        <h1>Fluid jumbotron !</h1>
-        <p>
-           This is a modified fluid jumbotron which
-           stretches the whole horizontal space.    
-        </p>
-        <Button variant="primary">
-         Primary Button
-        </Button>
-      </Container>
     </Jumbotron>
     </>
   );
